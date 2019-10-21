@@ -1,6 +1,6 @@
 {
-  "name": "react-gutenberg",
-  "version": "0.5.1",
+  "name": "@richthegeek/react-gutenberg",
+  "version": "0.6.0",
   "description": "The frontend Gutenberg block generator. OSS Project",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/u12206050/react-gutenberg.git"
+    "url": "git+https://github.com/richardvuu/react-gutenberg.git"
   },
   "keywords": [
     "gatsby",
@@ -22,13 +22,11 @@
   "author": "Gerard Lamusse",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/u12206050/react-gutenberg/issues"
+    "url": "https://github.com/richardvuu/react-gutenberg/issues"
   },
-  "homepage": "https://github.com/u12206050/react-gutenberg#readme",
+  "homepage": "https://github.com/richardvuu/react-gutenberg#readme",
   "dependencies": {
-    "@loadable/component": "^5.10.1",
     "@types/jest": "^24.0.13",
-    "@types/loadable__component": "^5.9.0",
     "@types/node": "^12.0.2",
     "@types/react-dom": "^16.8.4",
     "react": "^16.8.6",

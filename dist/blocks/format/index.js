@@ -1,13 +1,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
-const component_1 = require("@loadable/component");
-const Code = component_1.default(() => Promise.resolve().then(() => require('./code')));
-const Html = component_1.default(() => Promise.resolve().then(() => require('./html')));
-const Preformatted = component_1.default(() => Promise.resolve().then(() => require('./preformatted')));
-const Pullquote = component_1.default(() => Promise.resolve().then(() => require('./pullquote')));
+const code_1 = require("./code");
+const html_1 = require("./html");
+const preformatted_1 = require("./preformatted");
+const pullquote_1 = require("./pullquote");
 exports.default = {
-    Code,
-    Html,
-    Preformatted,
-    Pullquote
+    Code: code_1.default,
+    Html: html_1.default,
+    Preformatted: preformatted_1.default,
+    Pullquote: pullquote_1.default
 };
 //# sourceMappingURL=index.js.map

@@ -1,10 +1,7 @@
-import loadable from '@loadable/component'
-
 import CommonBlocks from './common'
 import FormatBlocks from './format'
 import LayoutBlocks from './layout'
-
-const DefaultHtmlBlock = loadable(() => import('./format/html'))
+import DefaultHtmlBlock from './format/html';
 
 export function GetTheBlock(name: string) {
   switch (name) {

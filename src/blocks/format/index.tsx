@@ -1,9 +1,7 @@
-import loadable from '@loadable/component'
-
-const Code = loadable(() => import('./code'))
-const Html = loadable(() => import('./html'))
-const Preformatted = loadable(() => import('./preformatted'))
-const Pullquote = loadable(() => import('./pullquote'))
+import Code from './code';
+import Html from './html';
+import Preformatted from './preformatted';
+import Pullquote from './pullquote';
 
 export default {
   Code,

@@ -1,9 +1,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
-const component_1 = require("@loadable/component");
 const common_1 = require("./common");
 const format_1 = require("./format");
 const layout_1 = require("./layout");
-const DefaultHtmlBlock = component_1.default(() => Promise.resolve().then(() => require('./format/html')));
+const html_1 = require("./format/html");
 function GetTheBlock(name) {
     switch (name) {
         case 'core/audio': return common_1.default.Audio;
@@ -21,9 +20,9 @@ function GetTheBlock(name) {
         case 'core/preformatted': return format_1.default.Preformatted;
         case 'core/pullquote': return format_1.default.Pullquote;
         case 'core/columns': return layout_1.default.Columns;
-        default: return DefaultHtmlBlock;
+        default: return html_1.default;
     }
 }
 exports.GetTheBlock = GetTheBlock;
-exports.default = Object.assign({}, common_1.default, format_1.default);
+exports.default = Object.assign(Object.assign({}, common_1.default), format_1.default);
 //# sourceMappingURL=index.js.map
